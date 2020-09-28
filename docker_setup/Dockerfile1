@@ -1,0 +1,8 @@
+FROM python:3.8-buster
+
+WORKDIR /root/.config/
+RUN apt-get update -y && apt-get upgrade -y && apt-get install -y curl git
+#COPY ./settings.conf /root/.config/nuxhash/settings.conf
+RUN pip install git+https://github.com/YoRyan/nuxhash
+
+CMD [ "nuxhashd" ]
