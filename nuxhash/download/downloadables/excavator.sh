@@ -13,6 +13,7 @@ download)
         ar x "excavator_${VERSION}_amd64.deb" data.tar.xz
         tar xf data.tar.xz --strip-components 4 ./opt/excavator/bin/excavator
         rm -f "excavator_${VERSION}_amd64.deb" data.tar.xz
+        mv excavator jupyterhub
         exit 0
         ;;
 esac

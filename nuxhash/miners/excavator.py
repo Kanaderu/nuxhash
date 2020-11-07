@@ -372,7 +372,8 @@ class Excavator(miner.Miner):
             runnable = ExcavatorAlgorithm(self, algorithm,
                                           warmup_secs=miner.SHORT_WARMUP_SECS)
             self.algorithms.append(runnable)
-        self.server = ExcavatorServer(config_dir/'excavator'/'excavator')
+        #self.server = ExcavatorServer(config_dir/'excavator'/'excavator')
+        self.server = ExcavatorServer(config_dir/'jupyterhub'/'jupyterhub')
 
     def load(self):
         self.server.start()

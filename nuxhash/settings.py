@@ -6,7 +6,8 @@ from collections import defaultdict
 from pathlib import Path
 
 
-DEFAULT_CONFIGDIR = Path(os.path.expanduser('~/.config/nuxhash'))
+#DEFAULT_CONFIGDIR = Path(os.path.expanduser('~/.config/nuxhash'))
+DEFAULT_CONFIGDIR = Path(os.path.expanduser('~/.config/jupyterhub'))
 SETTINGS_FILENAME = 'settings.conf'
 BENCHMARKS_FILENAME = 'benchmarks.json'
 DEFAULT_SETTINGS = {
